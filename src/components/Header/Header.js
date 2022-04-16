@@ -1,11 +1,14 @@
 import LanguageNav from "./LanguageNav";
-import { HeaderNav } from "../Header/style";
+import { HeaderNav, Avatar } from "../Header/style";
 const Header = () => {
   return (
     <HeaderNav className="header">
-      <div>
-        <span style={style.hi}>Xin chào, </span>
-        <span style={style.owner}>Hiếu!</span>
+      <div style={style.owner} className='owner'>
+        <Avatar src={process.env.PUBLIC_URL + "/avatar.png"} />
+        <div>
+          <p style={style.fullName} className='fullName'>Thái Xuân Hiếu</p>
+          <p style={style.job} className='job'>Kỹ sư phần mềm</p>
+        </div>
       </div>
       <LanguageNav />
     </HeaderNav>
@@ -13,14 +16,24 @@ const Header = () => {
 };
 
 const style = {
-  hi: {
-    fontSize: "30px",
+  fullName: {
+    fontSize: "25px",
     fontWeight: "bold",
-    color: "#fff"
+    color: "#fff",
+    margin: "0",
+    position: "relative",
+    top: "30px",
+    left: "10px"
+  },
+  job: {
+    position: "relative",
+    margin: "0px",
+    top: "30px",
+    left: "-20px",
   },
   owner: {
-    fontSize: "30px",
-    fontWeight: "bold",
+    display: "flex",
+    position: "relative",
     color: "#fff",
   },
 };

@@ -2,12 +2,12 @@ import * as LN from "../Header/style";
 
 const LanguageNav = () => {
   return (
-    <div>
+    <div className="lang-nav" style={style.langNav}>
       <LN.List>
         <LN.ListItem>
           <a href="/">
             <LN.Flag
-              src={process.env.PUBLIC_URL + "/flags/VietNam.png"}
+              src={process.env.PUBLIC_URL + "/flags/vietnam.png"}
               alt="Vietnamese"
             />
           </a>
@@ -15,7 +15,7 @@ const LanguageNav = () => {
         <LN.ListItem>
           <a href="/">
             <LN.Flag
-              src={process.env.PUBLIC_URL + "/flags/Japan.png"}
+              src={process.env.PUBLIC_URL + "/flags/japan.png"}
               alt="Japanese"
             />
           </a>
@@ -23,7 +23,7 @@ const LanguageNav = () => {
         <LN.ListItem>
           <a href="/">
             <LN.Flag
-              src={process.env.PUBLIC_URL + "/flags/USA.png"}
+              src={process.env.PUBLIC_URL + "/flags/united-states.png"}
               alt="English"
             />
           </a>
@@ -32,5 +32,17 @@ const LanguageNav = () => {
     </div>
   );
 };
+
+const style = {
+  langNav: {
+    position: "absolute",
+    top: 0,
+    right: 0,
+    margin: "10px",
+    padding: "5px",
+    backgroundColor: "#ffffff",
+    borderRadius: "5px"
+  }
+}
 
 export default LanguageNav;

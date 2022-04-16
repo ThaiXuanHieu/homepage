@@ -5,10 +5,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(111, 190, 73);
+  background-color: #6D60F8;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media only screen and (max-width: 348px) {
+  .fullName {
+    font-size: 22px !important;
+    left: 10px !important;
+  }
+
+  .job {
+    left: -10px !important;
+  }
+}
+
+@media only screen and (max-width: 322px) {
+  .owner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fullName {
+    top: 10px !important;
+  }
+
+  .job {
+    top: 15px !important;
+    left: 10px !important;
+  }
 }
