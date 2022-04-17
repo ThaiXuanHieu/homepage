@@ -42,5 +42,6 @@ export const ListItem = styled.li`
 export const Flag = styled.img`
   width: 20px;
   margin: 0px 5px;
+  cursor: pointer;
 `;
 

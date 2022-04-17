@@ -1,8 +1,12 @@
 import * as T from "../Body/style";
+import { useTranslation } from 'react-i18next';
+
 const Tab = () => {
+  const { t } = useTranslation();
+  
   return (
     <div style={{paddingTop: "30px"}}>
-      <T.TitleTech>Công nghệ</T.TitleTech>
+      <T.TitleTech>{t('techTitle')}</T.TitleTech>
       <T.TabHz>
         <T.TabItem><T.IconTech src={process.env.PUBLIC_URL + "/icons/csharp-logo.png"} /></T.TabItem>
         <T.TabItem><T.IconTech src={process.env.PUBLIC_URL + "/icons/html-logo.png"} /></T.TabItem>

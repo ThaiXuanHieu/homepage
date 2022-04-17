@@ -1,6 +1,10 @@
 import * as S from "../Body/style";
 import Tab from "./Tab";
+import { useTranslation } from 'react-i18next';
+
 const Body = () => {
+  const { t } = useTranslation();
+
   return (
     <div style={style.section}>
       <S.Container>
@@ -8,19 +12,19 @@ const Body = () => {
           <S.DescExp className="exp" style={style.sepa}>
             <div>
               <div style={style.diH}>1+</div>
-              <div style={style.diB}>Năm KN</div>
+              <div style={style.diB}>{t('yoe')}</div>
             </div>
           </S.DescExp>
           <S.DescProj className="project" style={style.sepa}>
             <div>
               <div style={style.diH}>3+</div>
-              <div style={style.diB}>Dự án</div>
+              <div style={style.diB}>{t('proj')}</div>
             </div>
           </S.DescProj>
           <S.DescLang className="lang">
             <div>
               <div style={style.diH}>2+</div>
-              <div style={style.diB}>Ngôn ngữ</div>
+              <div style={style.diB}>{t('lang')}</div>
             </div>
           </S.DescLang>
         </S.Desc>
