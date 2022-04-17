@@ -7,7 +7,7 @@ export const HeaderNav = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   padding: 60px 0px
 `;
@@ -29,7 +29,7 @@ export const ListItem = styled.li`
   padding-top: 5px;
   &:after {
     content: "";
-    border-right: 1px solid;
+    border-right: 1px solid #BEBAD6;
     height: 20px;
     position: absolute;
   }
