@@ -32,7 +32,7 @@ const style = {
     position: "relative",
     margin: "0px",
     top: "30px",
-    left: "10px",
+    left: "5px",
   },
   owner: {
     display: "flex",
